@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BudgetHome — Gizlilik Politikası / Privacy Policy</title>
+<style>
+  :root {
+    --navy: #1E3A5F;
+    --blue: #1A7FB5;
+    --ink: #1c2733;
+    --sub: #5b6b7a;
+    --line: #e4e9ee;
+    --bg: #f7f9fb;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+  }
+  header {
+    background: linear-gradient(135deg, var(--navy), var(--blue));
+    color: white;
+    padding: 48px 24px 64px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 6px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  header p {
+    margin: 0;
+    opacity: 0.85;
+    font-size: 14px;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: -36px auto 60px;
+    padding: 0 20px;
+  }
+  .toggle {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .toggle button {
+    border: none;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background: var(--card);
+    color: var(--sub);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    transition: all 0.15s ease;
+  }
+  .toggle button.active {
+    background: var(--navy);
+    color: white;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 2px 12px rgba(20,40,70,0.06);
+  }
+  .updated {
+    font-size: 13px;
+    color: var(--sub);
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+  }
+  section { margin-bottom: 28px; }
+  section:last-child { margin-bottom: 0; }
+  h2 {
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: var(--navy);
+  }
+  section p {
+    margin: 0;
+    font-size: 15px;
+    color: #34424f;
+    white-space: pre-line;
+  }
+  .lang-block { display: none; }
+  .lang-block.active { display: block; }
+  footer {
+    text-align: center;
+    font-size: 13px;
+    color: var(--sub);
+    padding: 0 20px 40px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>BudgetHome</h1>
+  <p>Gizlilik Politikası &nbsp;·&nbsp; Privacy Policy</p>
+</header>
+
+<div class="wrap">
+  <div class="toggle">
+    <button id="btn-tr" class="active" onclick="showLang('tr')">Türkçe</button>
+    <button id="btn-en" onclick="showLang('en')">English</button>
+  </div>
+
+  <div class="card">
+
+    <!-- ── TÜRKÇE ── -->
+    <div id="lang-tr" class="lang-block active">
+      <div class="updated">Son güncelleme: 29.08.2026</div>
+
+      <section>
+        <h2>1. Veri Sorumlusu</h2>
+        <p>Bu uygulama Yasin Kalkavan tarafından geliştirilmiştir.
+İletişim: budgethome@gmail.com</p>
+      </section>
+
+      <section>
+        <h2>2. Topladığımız Veriler</h2>
+        <p>BudgetHome, işlevlerini yerine getirebilmek için aşağıdaki verileri toplar:
+
+a) Hesap Verileri
+E-posta adresi ve şifre — hesap oluşturma ve giriş için. Şifreniz Firebase Authentication tarafından güvenli şekilde saklanır; biz şifrenizi düz metin olarak görmeyiz veya saklamayız.
+
+b) Finansal İşlem Verileri
+Uygulamaya girdiğiniz her işlem için: tutar, kategori, not (isteğe bağlı), işlem tarihi, gelir/gider tipi. Bu veriler Google Firebase Firestore üzerinde, yalnızca kendi hesabınıza bağlı olarak bulut ortamında saklanır.
+
+c) Cihazda Yerel Olarak Saklanan Ayarlar
+Dil ve para birimi tercihi, karanlık mod tercihi, aylık bütçe limiti, bildirim tercihleri — yalnızca cihazınızda tutulur, bize veya üçüncü bir tarafa gönderilmez.
+
+d) Reklam Verileri
+Uygulamada Google AdMob aracılığıyla reklam gösterilmektedir. Bu kapsamda Google ve reklam ortakları Reklam Kimliği (Advertising ID), cihaz bilgileri, yaklaşık konum (IP üzerinden) ve reklam etkileşim bilgilerini toplayabilir. Bu veriler ilgi alanlarınıza uygun reklam gösterebilmek için kullanılır. Reklam Kimliğinizi sıfırlamak veya kişiselleştirilmiş reklamlardan çıkmak için cihazınızın Ayarlar &gt; Google &gt; Reklamlar bölümünü kullanabilirsiniz.</p>
+      </section>
+
+      <section>
+        <h2>3. Verilerinizi Neden Topluyoruz</h2>
+        <p>• Hesabınıza giriş yapabilmeniz ve verilerinizin cihaz değiştirdiğinizde de erişilebilir olması için
+• Girdiğiniz gelir/gider işlemlerini saklayıp size gösterebilmek, grafik ve istatistik üretebilmek için
+• Belirlediğiniz bütçe limitine göre size bildirim gönderebilmek için
+• Uygulamayı ücretsiz sunabilmek amacıyla, ilgi alanlarınıza uygun reklamlar gösterebilmek için (Google AdMob aracılığıyla)</p>
+      </section>
+
+      <section>
+        <h2>4. Verilerinizi Kimlerle Paylaşıyoruz</h2>
+        <p>Verileriniz aşağıdakiler dışında hiçbir üçüncü tarafla paylaşılmaz, satılmaz veya kiralanmaz:
+• Google Firebase (Authentication ve Firestore) — verilerinizi bizim adımıza barındıran alt yüklenici konumundadır. policies.google.com/privacy
+• Google AdMob — reklamları sağlayan platform, reklam kişiselleştirmesi için Reklam Kimliğini ve cihaz bilgilerinizi kullanabilir. policies.google.com/technologies/ads
+• Yasal bir yükümlülük nedeniyle yetkili makamlarca talep edilmesi hâlinde
+
+Uygulamada Google AdMob dışında bir reklam ağı veya ayrı bir analitik/izleme SDK'sı kullanılmamaktadır.</p>
+      </section>
+
+      <section>
+        <h2>5. Verilerinizin Güvenliği</h2>
+        <p>Finansal verileriniz, Firebase Firestore güvenlik kuralları ile korunur; yalnızca kendi kimlik doğrulaması yapılmış hesabınız kendi verilerinize erişebilir. Yine de internet üzerinden hiçbir veri iletiminin veya bulutta saklamanın %100 güvenli olduğu garanti edilemez.</p>
+      </section>
+
+      <section>
+        <h2>6. Verilerinizin Saklanma Süresi</h2>
+        <p>Verileriniz, hesabınızı silene kadar saklanır. Hesap silme talebi için budgethome@gmail.com üzerinden bizimle iletişime geçebilir, ya da uygulama içinden Ayarlar &gt; Hesabı Sil yoluyla hesabınızı ve verilerinizi anında kendiniz silebilirsiniz.</p>
+      </section>
+
+      <section>
+        <h2>7. Haklarınız (KVKK ve GDPR kapsamında)</h2>
+        <p>KVKK madde 11 ve ilgili mevzuat kapsamında: verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacını öğrenme, verilerinizin düzeltilmesini/silinmesini isteme ve işlemeye itiraz etme haklarına sahipsiniz. Bu talepleriniz için budgethome@gmail.com adresinden bize ulaşabilirsiniz.</p>
+      </section>
+
+      <section>
+        <h2>8. Çocukların Gizliliği</h2>
+        <p>BudgetHome, 13 yaşın altındaki çocuklardan bilerek veri toplamamaktadır. Uygulamayı 13 yaş altı bir çocuğun kullandığını fark ederseniz lütfen bizimle iletişime geçin ya da Ayarlar bölümünden hesabı silmeniz tavsiye edilir.</p>
+      </section>
+
+      <section>
+        <h2>9. Politika Değişiklikleri</h2>
+        <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda bu sayfa üzerinden ve/veya uygulama içi bir bildirimle sizi bilgilendireceğiz.</p>
+      </section>
+
+      <section>
+        <h2>10. İletişim</h2>
+        <p>Sorularınız için: budgethome@gmail.com</p>
+      </section>
+    </div>
+
+    <!-- ── ENGLISH ── -->
+    <div id="lang-en" class="lang-block">
+      <div class="updated">Last updated: August 29, 2026</div>
+
+      <section>
+        <h2>1. Data Controller</h2>
+        <p>This app is developed by Yasin Kalkavan.
+Contact: budgethome@gmail.com</p>
+      </section>
+
+      <section>
+        <h2>2. Data We Collect</h2>
+        <p>BudgetHome collects the following data in order to provide its features:
+
+a) Account Data
+Email address and password — used to create an account and log in. Your password is stored securely by Firebase Authentication; we never see or store it in plain text.
+
+b) Financial Transaction Data
+For every transaction you enter: amount, category, note (optional), transaction date, income/expense type. This data is stored in the cloud via Google Firebase Firestore, linked only to your own account.
+
+c) Settings Stored Locally on Your Device
+Language and currency preference, dark mode preference, monthly budget limit, notification preferences — kept only on your device, never sent to us or any third party.
+
+d) Advertising Data
+The app displays ads via Google AdMob. Google and its advertising partners may collect an Advertising ID, device information, approximate location (via IP), and ad interaction data. This data is used to show you relevant ads. You can reset your Advertising ID or opt out of personalized ads via your device's Settings &gt; Google &gt; Ads.</p>
+      </section>
+
+      <section>
+        <h2>3. Why We Collect Your Data</h2>
+        <p>• So you can log into your account and access your data even if you switch devices
+• To store and display the income/expense transactions you enter, and to generate charts and statistics
+• To send you notifications based on the budget limit you set
+• To show you relevant ads (via Google AdMob) so we can offer the app for free</p>
+      </section>
+
+      <section>
+        <h2>4. Who We Share Your Data With</h2>
+        <p>Your data is not shared with, sold to, or rented to any third party except:
+• Google Firebase (Authentication and Firestore) — acts as a data processor hosting your data on our behalf. policies.google.com/privacy
+• Google AdMob — the platform that serves ads within the app, may use your Advertising ID and device information for personalization. policies.google.com/technologies/ads
+• When required by competent authorities due to a legal obligation
+
+Other than Google AdMob, the app does not use any additional ad network or a separate analytics/tracking SDK.</p>
+      </section>
+
+      <section>
+        <h2>5. Security of Your Data</h2>
+        <p>Your financial data is protected by Firebase Firestore security rules; only your own authenticated account can access your own data. That said, no data transmission over the internet or cloud storage can be guaranteed to be 100% secure.</p>
+      </section>
+
+      <section>
+        <h2>6. Data Retention</h2>
+        <p>Your data is retained until you delete your account. You can request account deletion by contacting us at budgethome@gmail.com, or delete your account and data yourself instantly from within the app via Settings &gt; Delete Account.</p>
+      </section>
+
+      <section>
+        <h2>7. Your Rights (under KVKK and GDPR)</h2>
+        <p>Under Article 11 of the Turkish Personal Data Protection Law (KVKK) and applicable regulations, you have the right to: learn whether your data is being processed, request information about it, learn the purpose of processing, request correction or deletion, and object to the processing. You can reach us at budgethome@gmail.com.</p>
+      </section>
+
+      <section>
+        <h2>8. Children's Privacy</h2>
+        <p>BudgetHome does not knowingly collect data from children under the age of 13. If you become aware that a child under 13 is using the app, please contact us, or it is recommended that you delete the account from the Settings section.</p>
+      </section>
+
+      <section>
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. We will notify you of significant changes via this page and/or an in-app notification.</p>
+      </section>
+
+      <section>
+        <h2>10. Contact</h2>
+        <p>For questions: budgethome@gmail.com</p>
+      </section>
+    </div>
+
+  </div>
+</div>
+
+<footer>© 2026 BudgetHome</footer>
+
+<script>
+function showLang(lang) {
+  document.getElementById('lang-tr').classList.toggle('active', lang === 'tr');
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+  document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+}
+</script>
+
+</body>
+</html>
