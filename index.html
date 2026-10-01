@@ -120,11 +120,11 @@
 
     <!-- ── TÜRKÇE ── -->
     <div id="lang-tr" class="lang-block active">
-      <div class="updated">Son güncelleme: 18.09.2026</div>
+      <div class="updated">Son güncelleme: 01.10.2026</div>
 
       <section>
         <h2>1. Veri Sorumlusu</h2>
-        <p>Bu uygulama Yasin Kalkavan tarafından geliştirilmiştir.
+        <p>Bu uygulama Yasin Kalkavan tarafından geliştirilmiştir ve 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında veri sorumlusudur.
 İletişim: bbudgethome@gmail.com</p>
       </section>
 
@@ -132,71 +132,100 @@
         <h2>2. Topladığımız Veriler</h2>
         <p>BudgetHome, işlevlerini yerine getirebilmek için aşağıdaki verileri toplar:
 
-a) Hesap Verileri
-E-posta adresi ve şifre — hesap oluşturma ve giriş için. Şifreniz Firebase Authentication tarafından güvenli şekilde saklanır; biz şifrenizi düz metin olarak görmeyiz veya saklamayız.
+a) Hesap ve Profil Verileri
+• E-posta adresi ve şifre — hesap oluşturma ve giriş için. Şifreniz Firebase Authentication tarafından güvenli şekilde saklanır; biz şifrenizi düz metin olarak görmeyiz veya saklamayız.
+• Görünen adınız ve seçtiğiniz avatar emojisi — profilinizde ve dahil olduğunuz gruplarda gösterilir.
 
 b) Finansal İşlem Verileri
-Uygulamaya girdiğiniz her işlem için: tutar, kategori, not (isteğe bağlı), işlem tarihi, gelir/gider tipi. Bu veriler Google Firebase Firestore üzerinde, yalnızca kendi hesabınıza bağlı olarak bulut ortamında saklanır.
+Uygulamaya girdiğiniz her işlem için: tutar, kategori, not (isteğe bağlı), işlem tarihi, gelir/gider tipi ve farklı para biriminde girdiyseniz orijinal tutar ile para birimi. Tekrarlayan işlem kurduysanız tutar, kategori, sıklık ve bitiş tarihi gibi ayarları da saklanır.
 
-c) Cihazda Yerel Olarak Saklanan Ayarlar
-Dil ve para birimi tercihi, karanlık mod tercihi, aylık bütçe limiti, bildirim tercihleri — yalnızca cihazınızda tutulur, bize veya üçüncü bir tarafa gönderilmez.
+c) Borç Takibi Verileri
+Borç Takibi özelliğini kullanırsanız, girdiğiniz kişi adı, tutar, birim, borç yönü (alacak/borç), vade tarihi, hatırlatma ayarı, not ve yapılan ödemeler saklanır. Buraya yazdığınız kişi adları yalnızca sizin kaydınızdır; o kişilerle paylaşılmaz ve o kişilere herhangi bir bildirim gönderilmez.
 
-d) Reklam Verileri
-Uygulamada Google AdMob aracılığıyla reklam gösterilmektedir. Bu kapsamda Google ve reklam ortakları Reklam Kimliği (Advertising ID), cihaz bilgileri, yaklaşık konum (IP üzerinden) ve reklam etkileşim bilgilerini toplayabilir. Bu veriler ilgi alanlarınıza uygun reklam gösterebilmek için kullanılır. Reklam Kimliğinizi sıfırlamak veya kişiselleştirilmiş reklamlardan çıkmak için cihazınızın Ayarlar > Google > Reklamlar bölümünü kullanabilirsiniz.
-
-e) Hesaplaşma ve Aile Grubu Verileri
+d) Hesaplaşma ve Aile Grubu Verileri
 Uygulamadaki "Hesaplaşma" (ortak harcama/borç paylaşımı) veya "Aile Grubu" özelliğini kullanarak bir grup oluşturduğunuzda ya da davet koduyla bir gruba katıldığınızda:
 • Adınız ve seçtiğiniz avatar emojiniz, o grubun diğer üyeleriyle paylaşılır
-• O grup içinde eklediğiniz harcama, gelir/gider ve borç kayıtları (tutar, açıklama, kategori, tarih) aynı gruptaki diğer üyeler tarafından görüntülenebilir
+• O grup içinde eklediğiniz harcama, ödeme, gelir/gider ve borç kayıtları (tutar, açıklama, kategori, tarih, kimin ödediği ve nasıl bölüşüldüğü) aynı gruptaki diğer üyeler tarafından görüntülenebilir
 • Aynı şekilde, grup üyelerinin o grup içinde eklediği kayıtları siz de görebilirsiniz
+• Uygulamayı kullanmayan kişileri gruba yalnızca bir isim ve emoji ile ekleyebilirsiniz; bu isimler grubun diğer üyelerine görünür. Başkalarının adlarını eklerken onların bundan haberdar olmasına özen göstermenizi rica ederiz.
 
-Bu paylaşım yalnızca dahil olduğunuz gruplarla, yalnızca o grup kapsamında eklenen verilerle sınırlıdır; kişisel (gruba bağlı olmayan) işlemleriniz hiçbir zaman başka bir kullanıcıyla paylaşılmaz. Bir gruptan ayrılarak grup üyeleriyle veri paylaşımını dilediğiniz zaman durdurabilirsiniz.</p>
+Bu paylaşım yalnızca dahil olduğunuz gruplarla, yalnızca o grup kapsamında eklenen verilerle sınırlıdır; kişisel (gruba bağlı olmayan) işlemleriniz ve borç takibi kayıtlarınız hiçbir zaman başka bir kullanıcıyla paylaşılmaz. Bir gruptan ayrılarak grup üyeleriyle veri paylaşımını dilediğiniz zaman durdurabilirsiniz.
+
+e) Cihazda Yerel Olarak Saklanan Veriler
+Aşağıdakiler yalnızca cihazınızda tutulur, bize veya üçüncü bir tarafa gönderilmez: dil ve para birimi tercihi, karanlık mod tercihi, aylık bütçe limiti, kategori bütçeleri, kendi oluşturduğunuz kategoriler, bildirim ve hatırlatma tercihleri, uygulama kilidi ayarları (bkz. madde 11) ve ana ekran widget'ında gösterilen özet bilgiler. Bildirimler ve hatırlatmalar cihazınızda zamanlanır.
+
+f) Reklam Verileri
+Uygulamada Google AdMob aracılığıyla reklam gösterilmektedir. Bu kapsamda Google ve reklam ortakları Reklam Kimliği (Advertising ID), cihaz bilgileri, yaklaşık konum (IP üzerinden) ve reklam etkileşim bilgilerini toplayabilir. Bu veriler reklam göstermek, reklamları ölçmek ve (izin verdiyseniz) kişiselleştirmek için kullanılır.
+• Yasal olarak gerekli olan bölgelerde (örneğin Avrupa Ekonomik Alanı ve Birleşik Krallık), reklamlar yüklenmeden önce Google'ın izin penceresi aracılığıyla tercihiniz sorulur.
+• iPhone'da, reklam kimliğiniz yalnızca uygulamanın takip izni (App Tracking Transparency) isteğine onay verirseniz kullanılır.
+• Reklam Kimliğinizi sıfırlamak veya kişiselleştirilmiş reklamlardan çıkmak için Android'de Ayarlar &gt; Google &gt; Reklamlar, iPhone'da Ayarlar &gt; Gizlilik ve Güvenlik &gt; Takip bölümünü kullanabilirsiniz.
+
+g) Döviz Kuru Sorguları
+Farklı para biriminde işlem girdiğinizde veya para biriminizi değiştirdiğinizde, güncel ya da geçmiş kurları almak için açık kaynaklı Frankfurter servisine (api.frankfurter.app) istek gönderilir. Bu istekte yalnızca para birimi kodları ve tarih bulunur; hesabınıza veya işlemlerinize ait hiçbir bilgi gönderilmez. Her internet isteğinde olduğu gibi IP adresiniz bu servis tarafından görülebilir.</p>
       </section>
 
       <section>
-        <h2>3. Verilerinizi Neden Topluyoruz</h2>
+        <h2>3. Verilerinizi Neden ve Hangi Hukuki Sebeple İşliyoruz</h2>
         <p>• Hesabınıza giriş yapabilmeniz ve verilerinizin cihaz değiştirdiğinizde de erişilebilir olması için
-• Girdiğiniz gelir/gider işlemlerini saklayıp size gösterebilmek, grafik ve istatistik üretebilmek için
-• Belirlediğiniz bütçe limitine göre size bildirim gönderebilmek için
+• Girdiğiniz gelir/gider, tekrarlayan işlem ve borç kayıtlarını saklayıp size gösterebilmek, grafik ve istatistik üretebilmek için
+• Belirlediğiniz bütçe limitine, faturalara ve borç vadelerine göre size hatırlatma gönderebilmek için
 • Dahil olduğunuz Hesaplaşma/Aile Grubu'ndaki ortak harcama ve bakiyeleri hesaplayıp size ve diğer grup üyelerine gösterebilmek için
-• Uygulamayı ücretsiz sunabilmek amacıyla, ilgi alanlarınıza uygun reklamlar gösterebilmek için (Google AdMob aracılığıyla)</p>
+• Uygulamayı ücretsiz sunabilmek amacıyla reklam gösterebilmek için (Google AdMob aracılığıyla)
+
+Hukuki sebepler (KVKK md. 5): Hesap, işlem, borç ve grup verileri, sizinle aramızdaki kullanım ilişkisinin (hizmetin) kurulması ve ifası için zorunlu olduğundan işlenir. Kişiselleştirilmiş reklamlar ve reklam kimliğinin kullanımı, verdiğiniz izne (açık rıza) dayanır; izninizi dilediğiniz zaman geri alabilirsiniz. Yasal yükümlülükler kapsamındaki talepler için ilgili mevzuat esas alınır.</p>
       </section>
 
       <section>
         <h2>4. Verilerinizi Kimlerle Paylaşıyoruz</h2>
         <p>Verileriniz aşağıdakiler dışında hiçbir üçüncü tarafla paylaşılmaz, satılmaz veya kiralanmaz:
-• Google Firebase (Authentication ve Firestore) — verilerinizi bizim adımıza barındıran alt yüklenici konumundadır. policies.google.com/privacy
-• Google AdMob — reklamları sağlayan platform, reklam kişiselleştirmesi için Reklam Kimliğini ve cihaz bilgilerinizi kullanabilir. policies.google.com/technologies/ads
-• Katıldığınız Hesaplaşma/Aile Grubu'ndaki diğer üyeler — yalnızca o grup kapsamında eklediğiniz ad, avatar ve harcama/gelir-gider kayıtlarını görebilirler
+• Google Firebase (Authentication ve Firestore) — verilerinizi bizim adımıza barındıran veri işleyen konumundadır. policies.google.com/privacy
+• Google AdMob — reklamları sağlayan platform; reklam kişiselleştirmesi için Reklam Kimliğini ve cihaz bilgilerinizi kullanabilir. policies.google.com/technologies/ads
+• Frankfurter döviz kuru servisi — yalnızca para birimi kodu ve tarih içeren kur sorguları (kişisel veri içermez)
+• Katıldığınız Hesaplaşma/Aile Grubu'ndaki diğer üyeler — yalnızca o grup kapsamında eklenen ad, avatar ve kayıtları görebilirler
 • Yasal bir yükümlülük nedeniyle yetkili makamlarca talep edilmesi hâlinde
 
 Uygulamada Google AdMob dışında bir reklam ağı veya ayrı bir analitik/izleme SDK'sı kullanılmamaktadır.</p>
       </section>
 
       <section>
-        <h2>5. Verilerinizin Güvenliği</h2>
-        <p>Finansal verileriniz, Firebase Firestore güvenlik kuralları ile korunur; yalnızca kendi kimlik doğrulaması yapılmış hesabınız kendi verilerinize erişebilir. Yine de internet üzerinden hiçbir veri iletiminin veya bulutta saklamanın %100 güvenli olduğu garanti edilemez.</p>
+        <h2>5. Verilerin Yurt Dışına Aktarılması</h2>
+        <p>Verileriniz, hizmet sağlayıcılarımız Google Firebase ve Google AdMob'un Türkiye dışında (ağırlıklı olarak Avrupa Birliği ve Amerika Birleşik Devletleri) bulunan sunucularında işlenir ve saklanır. Bu aktarım, hizmetin sunulabilmesi için ve KVKK'nın 9. maddesi ile ilgili mevzuat çerçevesinde, Google'ın veri işleme koşulları ve güvenlik tedbirleri kapsamında gerçekleşir. Uygulamayı kullanarak bu aktarımın gerçekleşeceğini kabul etmiş olursunuz; reklam kişiselleştirmesine ilişkin izninizi ise dilediğiniz zaman geri alabilirsiniz.</p>
       </section>
 
       <section>
-        <h2>6. Verilerinizin Saklanma Süresi</h2>
-        <p>Verileriniz, hesabınızı silene kadar saklanır. Hesap silme talebi için bbudgethome@gmail.com üzerinden bizimle iletişime geçebilir, ya da uygulama içinden Ayarlar > Hesabı Sil yoluyla hesabınızı ve verilerinizi anında kendiniz silebilirsiniz.
-
-Bir Hesaplaşma veya Aile grubuna üye iseniz, hesabınızı sildiğinizde grup üyeliğiniz kaldırılır; eğer grupta başka üye kalmıyorsa grup tamamen silinir. Grupta başka üye kalıyorsa, o gruptaki geçmiş kayıtlarda adınız artık görünmesin diye "Silinmiş Kullanıcı" etiketiyle değiştirilir.</p>
+        <h2>6. Verilerinizin Güvenliği</h2>
+        <p>Verileriniz aktarım sırasında şifreli bağlantı (HTTPS/TLS) ile iletilir ve Firebase Firestore güvenlik kuralları ile korunur; kişisel verilerinize yalnızca kendi kimliği doğrulanmış hesabınız, grup verilerine ise yalnızca o grubun üyeleri erişebilir. Yine de internet üzerinden hiçbir veri iletiminin veya bulutta saklamanın %100 güvenli olduğu garanti edilemez.</p>
       </section>
 
       <section>
-        <h2>7. Haklarınız (KVKK ve GDPR kapsamında)</h2>
-        <p>KVKK madde 11 ve ilgili mevzuat kapsamında: verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacını öğrenme, verilerinizin düzeltilmesini/silinmesini isteme ve işlemeye itiraz etme haklarına sahipsiniz. Bu talepleriniz için bbudgethome@gmail.com adresinden bize ulaşabilirsiniz.</p>
+        <h2>7. Verilerinizin Saklanma Süresi</h2>
+        <p>Verileriniz, hesabınızı silene kadar saklanır.
+• Sildiğiniz işlemler ve borç kayıtları 30 gün boyunca "Son Silinenler" bölümünde tutulur; bu sürede geri getirebilir ya da hemen kalıcı olarak silebilirsiniz. 30 günü geçen kayıtlar, uygulamayı bir sonraki açışınızda kalıcı olarak silinir.
+• Hesabınızı uygulama içinden Ayarlar &gt; Hesabı Sil yoluyla anında silebilir ya da bbudgethome@gmail.com üzerinden silme talebinde bulunabilirsiniz. Hesap silindiğinde kişisel işlemleriniz, tekrarlayan işlemleriniz, borç kayıtlarınız ve profiliniz kalıcı olarak silinir.
+• Bir Hesaplaşma veya Aile grubuna üye iseniz, hesabınızı sildiğinizde grup üyeliğiniz kaldırılır; grupta başka üye kalmıyorsa grup tamamen silinir. Grupta başka üye kalıyorsa, grubun ortak hesabının bozulmaması için o gruptaki geçmiş kayıtlar diğer üyeler için korunur, ancak adınız "Silinmiş Kullanıcı" etiketiyle değiştirilir.</p>
       </section>
 
       <section>
-        <h2>8. Çocukların Gizliliği</h2>
-        <p>BudgetHome, 13 yaşın altındaki çocuklardan bilerek veri toplamamaktadır. Uygulamayı 13 yaş altı bir çocuğun kullandığını fark ederseniz lütfen bizimle iletişime geçin ya da Ayarlar bölümünden hesabı silmeniz tavsiye edilir.</p>
+        <h2>8. Haklarınız (KVKK ve GDPR kapsamında)</h2>
+        <p>KVKK'nın 11. maddesi ve ilgili mevzuat kapsamında; verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini, silinmesini veya yok edilmesini isteme, bu işlemlerin aktarıldığı üçüncü kişilere bildirilmesini isteme, münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhinize bir sonuç çıkmasına itiraz etme ve kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme haklarına sahipsiniz.
+
+Avrupa Birliği'ndeki kullanıcılar GDPR kapsamında ayrıca verilerine erişme, verilerini taşıma, işlemeyi kısıtlama ve bulundukları ülkedeki veri koruma otoritesine şikâyette bulunma haklarına sahiptir. İşlem verilerinizi uygulama içinden Ayarlar &gt; Verilerimi Dışa Aktar ile CSV dosyası olarak alabilirsiniz.
+
+Talepleriniz için bbudgethome@gmail.com adresine yazabilirsiniz; talepleriniz en geç 30 gün içinde yanıtlanır. Yanıtımızı yeterli bulmazsanız Kişisel Verileri Koruma Kurulu'na başvurma hakkınız saklıdır.</p>
       </section>
 
       <section>
-        <h2>9. Uygulama Kilidi (PIN ve Biyometrik Doğrulama)</h2>
+        <h2>9. Çocukların Gizliliği</h2>
+        <p>BudgetHome 13 yaşın altındaki çocuklara yönelik değildir ve bu yaştaki çocuklardan bilerek veri toplamaz. Uygulamayı 13 yaş altı bir çocuğun kullandığını fark ederseniz lütfen bizimle iletişime geçin; ilgili hesap ve veriler silinecektir.</p>
+      </section>
+
+      <section>
+        <h2>10. Hizmet Dışı Bırakılan Özellikler</h2>
+        <p>Uygulamanın bu sürümünde fiş fotoğrafı yükleme ve Google/Apple hesabıyla giriş özellikleri etkin değildir; bu özellikler için herhangi bir veri toplanmaz. İleride etkinleştirilirlerse bu politika önceden güncellenecektir.</p>
+      </section>
+
+      <section>
+        <h2>11. Uygulama Kilidi (PIN ve Biyometrik Doğrulama)</h2>
         <p>BudgetHome'da isteğe bağlı bir uygulama kilidi özelliği bulunur. Bu özelliği açarsanız:
 
 • Parmak izi/yüz tanıma doğrulaması tamamen cihazınızın işletim sistemi tarafından, cihazınızın kendi güvenli donanımında yapılır. Parmak izi veya yüz verisi hiçbir zaman uygulamamız tarafından toplanmaz, görülmez, saklanmaz veya bize ya da başka bir tarafa gönderilmez — uygulamamız sadece doğrulamanın başarılı olup olmadığı bilgisini alır.
@@ -204,23 +233,24 @@ Bir Hesaplaşma veya Aile grubuna üye iseniz, hesabınızı sildiğinizde grup 
       </section>
 
       <section>
-        <h2>10. Politika Değişiklikleri</h2>
-        <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda bu sayfa üzerinden ve/veya uygulama içi bir bildirimle sizi bilgilendireceğiz.</p>
+        <h2>12. Politika Değişiklikleri</h2>
+        <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda bu sayfa üzerinden ve/veya uygulama içi bir bildirimle sizi bilgilendireceğiz. Güncel sürüm her zaman bu sayfada yayımlanır.</p>
       </section>
 
       <section>
-        <h2>11. İletişim</h2>
-        <p>Sorularınız için: bbudgethome@gmail.com</p>
+        <h2>13. İletişim</h2>
+        <p>Sorularınız ve talepleriniz için: bbudgethome@gmail.com</p>
       </section>
+
     </div>
 
     <!-- ── ENGLISH ── -->
     <div id="lang-en" class="lang-block">
-      <div class="updated">Last updated: September 18, 2026</div>
+      <div class="updated">Last updated: October 1, 2026</div>
 
       <section>
         <h2>1. Data Controller</h2>
-        <p>This app is developed by Yasin Kalkavan.
+        <p>This app is developed by Yasin Kalkavan, who is the data controller under the Turkish Personal Data Protection Law No. 6698 (KVKK).
 Contact: bbudgethome@gmail.com</p>
       </section>
 
@@ -228,71 +258,100 @@ Contact: bbudgethome@gmail.com</p>
         <h2>2. Data We Collect</h2>
         <p>BudgetHome collects the following data in order to provide its features:
 
-a) Account Data
-Email address and password — used to create an account and log in. Your password is stored securely by Firebase Authentication; we never see or store it in plain text.
+a) Account and Profile Data
+• Email address and password — used to create an account and log in. Your password is stored securely by Firebase Authentication; we never see or store it in plain text.
+• Your display name and the avatar emoji you choose — shown on your profile and in the groups you are part of.
 
 b) Financial Transaction Data
-For every transaction you enter: amount, category, note (optional), transaction date, income/expense type. This data is stored in the cloud via Google Firebase Firestore, linked only to your own account.
+For every transaction you enter: amount, category, note (optional), transaction date, income/expense type and, if you entered it in another currency, the original amount and currency. If you set up a recurring transaction, its settings (amount, category, frequency, end date, etc.) are also stored.
 
-c) Settings Stored Locally on Your Device
-Language and currency preference, dark mode preference, monthly budget limit, notification preferences — kept only on your device, never sent to us or any third party.
+c) Debt Tracking Data
+If you use Debt Tracking, the person's name you enter, amount, unit, direction (owed to you / you owe), due date, reminder setting, note and recorded payments are stored. Names you enter here are only your own records; they are not shared with those people and no notification is sent to them.
 
-d) Advertising Data
-The app displays ads via Google AdMob. Google and its advertising partners may collect an Advertising ID, device information, approximate location (via IP), and ad interaction data. This data is used to show you relevant ads. You can reset your Advertising ID or opt out of personalized ads via your device's Settings > Google > Ads.
-
-e) Settle Up and Family Group Data
+d) Settle Up and Family Group Data
 When you use the app's "Settle Up" (shared expense/debt splitting) or "Family Group" feature to create a group, or join one using an invite code:
 • Your name and the avatar emoji you chose are shared with the other members of that group
-• The expense, income/expense and debt records (amount, description, category, date) you add within that group can be viewed by the other members of the same group
+• The expense, payment, income/expense and debt records you add within that group (amount, description, category, date, who paid and how it was split) can be viewed by the other members of the same group
 • Likewise, you can view the records other members of that group add within it
+• You can add people who don't use the app to a group with just a name and an emoji; these names are visible to the other group members. When adding other people's names, please make sure they are aware of it.
 
-This sharing is limited to the groups you are part of and to data added within that group; your personal (non-group) transactions are never shared with any other user. You can stop sharing data with a group's members at any time by leaving that group.</p>
+This sharing is limited to the groups you are part of and to data added within that group; your personal (non-group) transactions and debt tracking records are never shared with any other user. You can stop sharing data with a group's members at any time by leaving that group.
+
+e) Data Stored Locally on Your Device
+The following are kept only on your device and are never sent to us or any third party: language and currency preference, dark mode preference, monthly budget limit, category budgets, categories you create, notification and reminder preferences, app lock settings (see section 11) and the summary shown on the home screen widget. Notifications and reminders are scheduled on your device.
+
+f) Advertising Data
+The app displays ads via Google AdMob. Google and its advertising partners may collect an Advertising ID, device information, approximate location (via IP), and ad interaction data. This data is used to show and measure ads and, if you consent, to personalize them.
+• Where legally required (for example in the European Economic Area and the United Kingdom), your preference is asked through Google's consent form before ads are loaded.
+• On iPhone, your advertising identifier is used only if you allow the app's tracking request (App Tracking Transparency).
+• To reset your Advertising ID or opt out of personalized ads, use Settings &gt; Google &gt; Ads on Android, or Settings &gt; Privacy &amp; Security &gt; Tracking on iPhone.
+
+g) Currency Rate Requests
+When you enter a transaction in another currency or change your currency, the app requests current or historical exchange rates from the open-source Frankfurter service (api.frankfurter.app). These requests contain only currency codes and a date; no information about your account or transactions is sent. As with any internet request, your IP address may be visible to this service.</p>
       </section>
 
       <section>
-        <h2>3. Why We Collect Your Data</h2>
+        <h2>3. Why We Process Your Data and Legal Basis</h2>
         <p>• So you can log into your account and access your data even if you switch devices
-• To store and display the income/expense transactions you enter, and to generate charts and statistics
-• To send you notifications based on the budget limit you set
+• To store and display the income/expense, recurring and debt records you enter, and to generate charts and statistics
+• To send you reminders based on your budget limit, bills and debt due dates
 • To calculate and display shared expenses and balances for the Settle Up/Family Group you are part of, to you and to the other group members
-• To show you relevant ads (via Google AdMob) so we can offer the app for free</p>
+• To show ads (via Google AdMob) so we can offer the app for free
+
+Legal basis: account, transaction, debt and group data are processed because they are necessary to provide the service you use (performance of a contract). Personalized advertising and the use of your advertising identifier are based on your consent, which you can withdraw at any time. Requests arising from legal obligations are handled under the applicable law.</p>
       </section>
 
       <section>
         <h2>4. Who We Share Your Data With</h2>
         <p>Your data is not shared with, sold to, or rented to any third party except:
 • Google Firebase (Authentication and Firestore) — acts as a data processor hosting your data on our behalf. policies.google.com/privacy
-• Google AdMob — the platform that serves ads within the app, may use your Advertising ID and device information for personalization. policies.google.com/technologies/ads
-• Other members of the Settle Up/Family Group you join — they can see the name, avatar and expense/income-expense records you add within that group only
+• Google AdMob — the platform that serves ads within the app; may use your Advertising ID and device information for personalization. policies.google.com/technologies/ads
+• Frankfurter currency rate service — rate requests containing only a currency code and a date (no personal data)
+• Other members of the Settle Up/Family Group you join — they can see only the name, avatar and records added within that group
 • When required by competent authorities due to a legal obligation
 
 Other than Google AdMob, the app does not use any additional ad network or a separate analytics/tracking SDK.</p>
       </section>
 
       <section>
-        <h2>5. Security of Your Data</h2>
-        <p>Your financial data is protected by Firebase Firestore security rules; only your own authenticated account can access your own data. That said, no data transmission over the internet or cloud storage can be guaranteed to be 100% secure.</p>
+        <h2>5. International Data Transfers</h2>
+        <p>Your data is processed and stored on servers of our service providers Google Firebase and Google AdMob located outside Turkey (mainly in the European Union and the United States). This transfer takes place because it is necessary to provide the service, within the framework of Article 9 of KVKK and applicable regulations, under Google&#x27;s data processing terms and security measures. By using the app you acknowledge this transfer; you can withdraw your consent to ad personalization at any time.</p>
       </section>
 
       <section>
-        <h2>6. Data Retention</h2>
-        <p>Your data is retained until you delete your account. You can request account deletion by contacting us at bbudgethome@gmail.com, or delete your account and data yourself instantly from within the app via Settings > Delete Account.
-
-If you are a member of a Settlement (Hesaplaşma) or Family group, deleting your account removes your membership from that group; if no other member remains, the group itself is deleted entirely. If other members remain, your name in that group's remaining historical records is replaced with a "Deleted User" label so it no longer identifies you.</p>
+        <h2>6. Security of Your Data</h2>
+        <p>Your data is transmitted over encrypted connections (HTTPS/TLS) and protected by Firebase Firestore security rules; only your own authenticated account can access your personal data, and only the members of a group can access that group's data. That said, no data transmission over the internet or cloud storage can be guaranteed to be 100% secure.</p>
       </section>
 
       <section>
-        <h2>7. Your Rights (under KVKK and GDPR)</h2>
-        <p>Under Article 11 of the Turkish Personal Data Protection Law (KVKK) and applicable regulations, you have the right to: learn whether your data is being processed, request information about it, learn the purpose of processing, request correction or deletion, and object to the processing. You can reach us at bbudgethome@gmail.com.</p>
+        <h2>7. Data Retention</h2>
+        <p>Your data is retained until you delete your account.
+• Transactions and debt records you delete are kept in "Recently Deleted" for 30 days, during which you can restore them or delete them permanently right away. Records older than 30 days are permanently deleted the next time you open the app.
+• You can delete your account instantly in the app via Settings &gt; Delete Account, or request deletion at bbudgethome@gmail.com. When your account is deleted, your personal transactions, recurring transactions, debt records and profile are permanently deleted.
+• If you are a member of a Settle Up or Family group, deleting your account removes your membership; if no other member remains, the group is deleted entirely. If other members remain, the group's historical records are kept for them so the group's shared balances stay correct, but your name is replaced with a "Deleted User" label.</p>
       </section>
 
       <section>
-        <h2>8. Children's Privacy</h2>
-        <p>BudgetHome does not knowingly collect data from children under the age of 13. If you become aware that a child under 13 is using the app, please contact us, or it is recommended that you delete the account from the Settings section.</p>
+        <h2>8. Your Rights (under KVKK and GDPR)</h2>
+        <p>Under Article 11 of KVKK and applicable regulations, you have the right to: learn whether your data is processed and request information about it; learn the purpose of processing and whether it is used accordingly; know the third parties in Turkey or abroad to whom it is transferred; request correction if incomplete or inaccurate, and deletion or destruction; request that these actions be notified to third parties to whom the data was transferred; object to a result against you arising exclusively from automated analysis; and claim compensation for damage caused by unlawful processing.
+
+Users in the European Union additionally have the rights of access, data portability, restriction of processing, and to lodge a complaint with their local data protection authority. You can export your transaction data as a CSV file in the app via Settings &gt; Export My Data.
+
+You can send your requests to bbudgethome@gmail.com; they will be answered within 30 days at the latest. If you are not satisfied with our response, you have the right to apply to the Turkish Personal Data Protection Board (KVKK Kurulu).</p>
       </section>
 
       <section>
-        <h2>9. App Lock (PIN and Biometric Authentication)</h2>
+        <h2>9. Children&#x27;s Privacy</h2>
+        <p>BudgetHome is not directed at children under 13 and does not knowingly collect data from them. If you become aware that a child under 13 is using the app, please contact us and the account and its data will be deleted.</p>
+      </section>
+
+      <section>
+        <h2>10. Disabled Features</h2>
+        <p>In this version of the app, receipt photo upload and sign-in with a Google/Apple account are not enabled, and no data is collected for them. If they are enabled in the future, this policy will be updated in advance.</p>
+      </section>
+
+      <section>
+        <h2>11. App Lock (PIN and Biometric Authentication)</h2>
         <p>BudgetHome includes an optional app lock feature. If you turn it on:
 
 • Fingerprint/face verification is performed entirely by your device's operating system, inside your device's own secure hardware. Fingerprint or face data is never collected, seen, stored, or transmitted to us or any other party by our app — our app only receives a yes/no result of whether verification succeeded.
@@ -300,14 +359,15 @@ If you are a member of a Settlement (Hesaplaşma) or Family group, deleting your
       </section>
 
       <section>
-        <h2>10. Changes to This Policy</h2>
-        <p>We may update this privacy policy from time to time. We will notify you of significant changes via this page and/or an in-app notification.</p>
+        <h2>12. Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. We will notify you of significant changes via this page and/or an in-app notification. The current version is always published on this page.</p>
       </section>
 
       <section>
-        <h2>11. Contact</h2>
-        <p>For questions: bbudgethome@gmail.com</p>
+        <h2>13. Contact</h2>
+        <p>For questions and requests: bbudgethome@gmail.com</p>
       </section>
+
     </div>
 
   </div>
