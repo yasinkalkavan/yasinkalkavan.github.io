@@ -120,7 +120,7 @@
 
     <!-- ── TÜRKÇE ── -->
     <div id="lang-tr" class="lang-block active">
-      <div class="updated">Son güncelleme: 01.10.2026</div>
+      <div class="updated">Son güncelleme: 02.10.2026</div>
 
       <section>
         <h2>1. Veri Sorumlusu</h2>
@@ -135,6 +135,7 @@
 a) Hesap ve Profil Verileri
 • E-posta adresi ve şifre — hesap oluşturma ve giriş için. Şifreniz Firebase Authentication tarafından güvenli şekilde saklanır; biz şifrenizi düz metin olarak görmeyiz veya saklamayız.
 • Görünen adınız ve seçtiğiniz avatar emojisi — profilinizde ve dahil olduğunuz gruplarda gösterilir.
+• Google veya Apple ile giriş yaparsanız: ilgili hizmetin bize ilettiği ad, e-posta adresi ve hesabınıza ait benzersiz kimlik. Apple ile girişte e-postanızı gizlemeyi seçerseniz Apple'ın verdiği yönlendirme adresi kullanılır. Google veya Apple şifrenizi hiçbir zaman görmeyiz.
 
 b) Finansal İşlem Verileri
 Uygulamaya girdiğiniz her işlem için: tutar, kategori, not (isteğe bağlı), işlem tarihi, gelir/gider tipi ve farklı para biriminde girdiyseniz orijinal tutar ile para birimi. Tekrarlayan işlem kurduysanız tutar, kategori, sıklık ve bitiş tarihi gibi ayarları da saklanır.
@@ -156,7 +157,7 @@ Aşağıdakiler yalnızca cihazınızda tutulur, bize veya üçüncü bir tarafa
 
 f) Reklam Verileri
 Uygulamada Google AdMob aracılığıyla reklam gösterilmektedir. Bu kapsamda Google ve reklam ortakları Reklam Kimliği (Advertising ID), cihaz bilgileri, yaklaşık konum (IP üzerinden) ve reklam etkileşim bilgilerini toplayabilir. Bu veriler reklam göstermek, reklamları ölçmek ve (izin verdiyseniz) kişiselleştirmek için kullanılır.
-• Yasal olarak gerekli olan bölgelerde (örneğin Avrupa Ekonomik Alanı ve Birleşik Krallık), reklamlar yüklenmeden önce Google'ın izin penceresi aracılığıyla tercihiniz sorulur.
+• Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki kullanıcılara, reklamlar yüklenmeden önce Google'ın izin (GDPR) penceresi gösterilir; tercihinizi bu pencerede belirlersiniz.
 • iPhone'da, reklam kimliğiniz yalnızca uygulamanın takip izni (App Tracking Transparency) isteğine onay verirseniz kullanılır.
 • Reklam Kimliğinizi sıfırlamak veya kişiselleştirilmiş reklamlardan çıkmak için Android'de Ayarlar &gt; Google &gt; Reklamlar, iPhone'da Ayarlar &gt; Gizlilik ve Güvenlik &gt; Takip bölümünü kullanabilirsiniz.
 
@@ -179,6 +180,7 @@ Hukuki sebepler (KVKK md. 5): Hesap, işlem, borç ve grup verileri, sizinle ara
         <h2>4. Verilerinizi Kimlerle Paylaşıyoruz</h2>
         <p>Verileriniz aşağıdakiler dışında hiçbir üçüncü tarafla paylaşılmaz, satılmaz veya kiralanmaz:
 • Google Firebase (Authentication ve Firestore) — verilerinizi bizim adımıza barındıran veri işleyen konumundadır. policies.google.com/privacy
+• Google ve Apple (yalnızca bu yöntemlerle giriş yapmayı seçerseniz) — kimliğinizi doğrulamak için. policies.google.com/privacy · apple.com/legal/privacy
 • Google AdMob — reklamları sağlayan platform; reklam kişiselleştirmesi için Reklam Kimliğini ve cihaz bilgilerinizi kullanabilir. policies.google.com/technologies/ads
 • Frankfurter döviz kuru servisi — yalnızca para birimi kodu ve tarih içeren kur sorguları (kişisel veri içermez)
 • Katıldığınız Hesaplaşma/Aile Grubu'ndaki diğer üyeler — yalnızca o grup kapsamında eklenen ad, avatar ve kayıtları görebilirler
@@ -189,18 +191,18 @@ Uygulamada Google AdMob dışında bir reklam ağı veya ayrı bir analitik/izle
 
       <section>
         <h2>5. Verilerin Yurt Dışına Aktarılması</h2>
-        <p>Verileriniz, hizmet sağlayıcılarımız Google Firebase ve Google AdMob'un Türkiye dışında (ağırlıklı olarak Avrupa Birliği ve Amerika Birleşik Devletleri) bulunan sunucularında işlenir ve saklanır. Bu aktarım, hizmetin sunulabilmesi için ve KVKK'nın 9. maddesi ile ilgili mevzuat çerçevesinde, Google'ın veri işleme koşulları ve güvenlik tedbirleri kapsamında gerçekleşir. Uygulamayı kullanarak bu aktarımın gerçekleşeceğini kabul etmiş olursunuz; reklam kişiselleştirmesine ilişkin izninizi ise dilediğiniz zaman geri alabilirsiniz.</p>
+        <p>Verileriniz, hizmet sağlayıcılarımız Google Firebase ve Google AdMob'un Türkiye dışında (ağırlıklı olarak Avrupa Birliği ve Amerika Birleşik Devletleri) bulunan sunucularında işlenir ve saklanır. Bu aktarım, KVKK'nın 9. maddesi ve ilgili mevzuat çerçevesinde, hizmetin sunulabilmesi için ve Google'ın uyguladığı standart sözleşme hükümleri ile teknik ve idari güvenlik tedbirlerine dayanılarak gerçekleştirilir. Uygulamayı kullanarak bu aktarımın gerçekleşeceğini kabul etmiş olursunuz; reklam kişiselleştirmesine ilişkin izninizi ise dilediğiniz zaman geri alabilirsiniz.</p>
       </section>
 
       <section>
         <h2>6. Verilerinizin Güvenliği</h2>
-        <p>Verileriniz aktarım sırasında şifreli bağlantı (HTTPS/TLS) ile iletilir ve Firebase Firestore güvenlik kuralları ile korunur; kişisel verilerinize yalnızca kendi kimliği doğrulanmış hesabınız, grup verilerine ise yalnızca o grubun üyeleri erişebilir. Yine de internet üzerinden hiçbir veri iletiminin veya bulutta saklamanın %100 güvenli olduğu garanti edilemez.</p>
+        <p>Verileriniz aktarım sırasında şifreli bağlantı (HTTPS/TLS) ile iletilir ve Firebase Firestore güvenlik kuralları ile korunur; kişisel verilerinize yalnızca kendi kimliği doğrulanmış hesabınız, grup verilerine ise yalnızca o grubun üyeleri erişebilir. Grup kayıtlarını yalnızca kaydı giren kişi düzenleyebilir veya silebilir. Yine de internet üzerinden hiçbir veri iletiminin veya bulutta saklamanın %100 güvenli olduğu garanti edilemez.</p>
       </section>
 
       <section>
         <h2>7. Verilerinizin Saklanma Süresi</h2>
         <p>Verileriniz, hesabınızı silene kadar saklanır.
-• Sildiğiniz işlemler ve borç kayıtları 30 gün boyunca "Son Silinenler" bölümünde tutulur; bu sürede geri getirebilir ya da hemen kalıcı olarak silebilirsiniz. 30 günü geçen kayıtlar, uygulamayı bir sonraki açışınızda kalıcı olarak silinir.
+• Sildiğiniz kişisel işlemler 30 gün boyunca "Son Silinenler" bölümünde tutulur; bu sürede geri getirebilir ya da kalıcı olarak silebilirsiniz. 30 günün sonunda otomatik olarak kalıcı biçimde silinirler.
 • Hesabınızı uygulama içinden Ayarlar &gt; Hesabı Sil yoluyla anında silebilir ya da bbudgethome@gmail.com üzerinden silme talebinde bulunabilirsiniz. Hesap silindiğinde kişisel işlemleriniz, tekrarlayan işlemleriniz, borç kayıtlarınız ve profiliniz kalıcı olarak silinir.
 • Bir Hesaplaşma veya Aile grubuna üye iseniz, hesabınızı sildiğinizde grup üyeliğiniz kaldırılır; grupta başka üye kalmıyorsa grup tamamen silinir. Grupta başka üye kalıyorsa, grubun ortak hesabının bozulmaması için o gruptaki geçmiş kayıtlar diğer üyeler için korunur, ancak adınız "Silinmiş Kullanıcı" etiketiyle değiştirilir.</p>
       </section>
@@ -220,8 +222,10 @@ Talepleriniz için bbudgethome@gmail.com adresine yazabilirsiniz; talepleriniz e
       </section>
 
       <section>
-        <h2>10. Hizmet Dışı Bırakılan Özellikler</h2>
-        <p>Uygulamanın bu sürümünde fiş fotoğrafı yükleme ve Google/Apple hesabıyla giriş özellikleri etkin değildir; bu özellikler için herhangi bir veri toplanmaz. İleride etkinleştirilirlerse bu politika önceden güncellenecektir.</p>
+        <h2>10. Google ve Apple ile Giriş</h2>
+        <p>BudgetHome'a e-posta ve şifrenin yanı sıra Google hesabınızla (Android ve iPhone) veya Apple hesabınızla (iPhone) giriş yapabilirsiniz. Bu durumda yalnızca giriş için gereken ad, e-posta adresi ve benzersiz hesap kimliği Firebase Authentication'a iletilir; Google veya Apple şifreniz bizimle paylaşılmaz. Hesabınızı uygulama içinden sildiğinizde, Apple ile giriş yaptıysanız Apple'daki uygulama bağlantınız da iptal edilir. Bağlantıyı dilediğiniz zaman Google Hesabı veya Apple Hesabı ayarlarınızdan da kaldırabilirsiniz.
+
+Fiş fotoğrafı yükleme özelliği bu sürümde etkin değildir ve bunun için veri toplanmaz.</p>
       </section>
 
       <section>
@@ -246,7 +250,7 @@ Talepleriniz için bbudgethome@gmail.com adresine yazabilirsiniz; talepleriniz e
 
     <!-- ── ENGLISH ── -->
     <div id="lang-en" class="lang-block">
-      <div class="updated">Last updated: October 1, 2026</div>
+      <div class="updated">Last updated: October 2, 2026</div>
 
       <section>
         <h2>1. Data Controller</h2>
@@ -261,6 +265,7 @@ Contact: bbudgethome@gmail.com</p>
 a) Account and Profile Data
 • Email address and password — used to create an account and log in. Your password is stored securely by Firebase Authentication; we never see or store it in plain text.
 • Your display name and the avatar emoji you choose — shown on your profile and in the groups you are part of.
+• If you sign in with Google or Apple: the name, email address and unique account identifier provided by that service. If you choose to hide your email with Apple, the relay address provided by Apple is used. We never see your Google or Apple password.
 
 b) Financial Transaction Data
 For every transaction you enter: amount, category, note (optional), transaction date, income/expense type and, if you entered it in another currency, the original amount and currency. If you set up a recurring transaction, its settings (amount, category, frequency, end date, etc.) are also stored.
@@ -282,7 +287,7 @@ The following are kept only on your device and are never sent to us or any third
 
 f) Advertising Data
 The app displays ads via Google AdMob. Google and its advertising partners may collect an Advertising ID, device information, approximate location (via IP), and ad interaction data. This data is used to show and measure ads and, if you consent, to personalize them.
-• Where legally required (for example in the European Economic Area and the United Kingdom), your preference is asked through Google's consent form before ads are loaded.
+• Users in the European Economic Area, the United Kingdom and Switzerland are shown Google's consent (GDPR) form before any ads are loaded, where they set their preference.
 • On iPhone, your advertising identifier is used only if you allow the app's tracking request (App Tracking Transparency).
 • To reset your Advertising ID or opt out of personalized ads, use Settings &gt; Google &gt; Ads on Android, or Settings &gt; Privacy &amp; Security &gt; Tracking on iPhone.
 
@@ -305,6 +310,7 @@ Legal basis: account, transaction, debt and group data are processed because the
         <h2>4. Who We Share Your Data With</h2>
         <p>Your data is not shared with, sold to, or rented to any third party except:
 • Google Firebase (Authentication and Firestore) — acts as a data processor hosting your data on our behalf. policies.google.com/privacy
+• Google and Apple (only if you choose to sign in with them) — to verify your identity. policies.google.com/privacy · apple.com/legal/privacy
 • Google AdMob — the platform that serves ads within the app; may use your Advertising ID and device information for personalization. policies.google.com/technologies/ads
 • Frankfurter currency rate service — rate requests containing only a currency code and a date (no personal data)
 • Other members of the Settle Up/Family Group you join — they can see only the name, avatar and records added within that group
@@ -315,18 +321,18 @@ Other than Google AdMob, the app does not use any additional ad network or a sep
 
       <section>
         <h2>5. International Data Transfers</h2>
-        <p>Your data is processed and stored on servers of our service providers Google Firebase and Google AdMob located outside Turkey (mainly in the European Union and the United States). This transfer takes place because it is necessary to provide the service, within the framework of Article 9 of KVKK and applicable regulations, under Google&#x27;s data processing terms and security measures. By using the app you acknowledge this transfer; you can withdraw your consent to ad personalization at any time.</p>
+        <p>Your data is processed and stored on servers of our service providers Google Firebase and Google AdMob located outside Turkey (mainly in the European Union and the United States). This transfer takes place under Article 9 of KVKK and applicable regulations, as it is necessary to provide the service, and relies on the standard contractual clauses and technical and organizational security measures applied by Google. By using the app you acknowledge this transfer; you can withdraw your consent to ad personalization at any time.</p>
       </section>
 
       <section>
         <h2>6. Security of Your Data</h2>
-        <p>Your data is transmitted over encrypted connections (HTTPS/TLS) and protected by Firebase Firestore security rules; only your own authenticated account can access your personal data, and only the members of a group can access that group's data. That said, no data transmission over the internet or cloud storage can be guaranteed to be 100% secure.</p>
+        <p>Your data is transmitted over encrypted connections (HTTPS/TLS) and protected by Firebase Firestore security rules; only your own authenticated account can access your personal data, and only the members of a group can access that group's data. Group records can be edited or deleted only by the person who added them. That said, no data transmission over the internet or cloud storage can be guaranteed to be 100% secure.</p>
       </section>
 
       <section>
         <h2>7. Data Retention</h2>
         <p>Your data is retained until you delete your account.
-• Transactions and debt records you delete are kept in "Recently Deleted" for 30 days, during which you can restore them or delete them permanently right away. Records older than 30 days are permanently deleted the next time you open the app.
+• Personal transactions you delete are kept in "Recently Deleted" for 30 days, during which you can restore them or delete them permanently. After 30 days they are permanently deleted automatically.
 • You can delete your account instantly in the app via Settings &gt; Delete Account, or request deletion at bbudgethome@gmail.com. When your account is deleted, your personal transactions, recurring transactions, debt records and profile are permanently deleted.
 • If you are a member of a Settle Up or Family group, deleting your account removes your membership; if no other member remains, the group is deleted entirely. If other members remain, the group's historical records are kept for them so the group's shared balances stay correct, but your name is replaced with a "Deleted User" label.</p>
       </section>
@@ -346,8 +352,10 @@ You can send your requests to bbudgethome@gmail.com; they will be answered withi
       </section>
 
       <section>
-        <h2>10. Disabled Features</h2>
-        <p>In this version of the app, receipt photo upload and sign-in with a Google/Apple account are not enabled, and no data is collected for them. If they are enabled in the future, this policy will be updated in advance.</p>
+        <h2>10. Sign in with Google and Apple</h2>
+        <p>In addition to email and password, you can sign in to BudgetHome with your Google account (Android and iPhone) or your Apple account (iPhone). In that case only the name, email address and unique account identifier needed for sign-in are passed to Firebase Authentication; your Google or Apple password is never shared with us. When you delete your account in the app, the app's Sign in with Apple connection is also revoked if you used Apple. You can also remove the connection at any time from your Google Account or Apple Account settings.
+
+Receipt photo upload is not enabled in this version and no data is collected for it.</p>
       </section>
 
       <section>
